@@ -1,0 +1,69 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: pink;
+}
+
+.nav a{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 15px;
+  padding-right: 30px;
+  color: gray;
+  }
+
+
+#headerImg{
+  max-width: 100%;
+  display: block;
+}
+
+.midsection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  flex: 1 1 none;
+  color: #000;
+  border-radius: 0.5em;
+  padding: 0.25ex 1em 0.25ex 1em;
+}
+
+.header-login{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+footer{
+  text-align: center;
+}

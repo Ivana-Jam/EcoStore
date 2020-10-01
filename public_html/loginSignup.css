@@ -1,0 +1,160 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: pink;
+  font-size: 40px;
+}
+
+.nav a{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 15px;
+  padding-right: 30px;
+  color: gray;
+  }
+
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+ table{
+padding: 10px;
+ }
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background: pink;
+  color: white;
+  border: 1px solid pink;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: pink;
+}
+.header-login {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.midsection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.header-login {
+  top: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+
+.header-login form {
+  height: 100%;
+  justify-content: center;
+}
+
+.header-login form input {
+  width: calc(100% - 30px);
+  height: 30px;
+  padding: 0 15px;
+  margin-bottom: 6px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: pink;
+  color: gray;
+  float: left;
+  font-family: "Montserrat";
+}
+
+
+.header-login form button:hover{
+  cursor: pointer;
+}
+
+.header-login a{
+  margin-left: 8px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  border-style: solid;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.signup-button{
+    display: inline-block;
+ }
+
+
+.login-status {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Montserrat";
+  color: pink;
+}
+
+.form-signup {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 200px;
+}
+
+.form-signup input {
+  width: calc(100% - 30px);
+  height: 30px;
+  padding: 0 15px;
+  margin-bottom: 6px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: pink;
+  color: gray;
+  float: left;
+  font-family: "Montserrat";
+}
+
+.form-signup button:hover{
+  cursor: pointer;
+}
+
+footer{
+  text-align: center;
+}

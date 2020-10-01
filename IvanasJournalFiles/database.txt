@@ -1,0 +1,68 @@
+CREATE TABLE users (
+  idUsers int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  uidUsers TINYTEXT NOT NULL,
+  emailUsers TINYTEXT NOT NULL,
+  pwdUsers LONGTEXT NOT NULL
+);
+
+INSERT INTO users
+VALUES (1, 'Ivana', 'ivana@mail.com', 'passI');
+
+INSERT INTO users
+VALUES(2, 'Selin', 'selin@mail.com', 'passS');
+
+INSERT INTO users
+VALUES(3, 'Brittany', 'brittany@mail.com', 'passB');
+
+CREATE TABLE inventory (
+  productID int(3) PRIMARY KEY NOT NULL,
+  productName VARCHAR(25) NOT NULL UNIQUE
+);
+
+INSERT INTO inventory
+VALUES(1, 'Boxed Water');
+
+INSERT INTO inventory
+VALUES (2, 'Wooden Cutlery');
+
+INSERT INTO inventory
+VALUES (3, 'Reuseable Coffee Capsules');
+
+INSERT INTO inventory
+VALUES (4, 'Eco Soap');
+
+CREATE TABLE ratings (
+  ratingID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  idUsers int(11) NOT NULL,
+  productID int(3) NOT NULL,
+  Rating int(1) NOT NULL,
+  comment VARCHAR(100),
+  FOREIGN KEY(productID) REFERENCES inventory(productID)
+  ON DELETE CASCADE,
+  FOREIGN KEY(idUsers) REFERENCES users(idUsers)
+  ON DELETE CASCADE
+);
+
+INSERT INTO ratings 
+VALUES(1, 1, 1, 5, 'I like my water with extra box, it gives it a nice kick.');
+
+INSERT INTO ratings 
+VALUES(2, 1, 2, 4, 'Makes all food taste like wood, everything I look for in a product like this.');
+
+INSERT INTO ratings 
+VALUES(3, 2, 4, 5, 'Makes me smell like dirt! Love it!');
+
+INSERT INTO ratings 
+VALUES(4, 3, 3, 3, 'Good product, but I wish the capsules were less capsule-y');
+
+CREATE TABLE ShoppingCart(
+  idUsers int(11) NOT NULL,
+  productID int(3) NOT NULL,
+  Quantity int(2) NOT NULL,
+  PRIMARY KEY(idUsers, productID),
+  FOREIGN KEY(productID) REFERENCES inventory(productID)
+  ON DELETE CASCADE,
+  FOREIGN KEY(idUsers) REFERENCES users(idUsers)
+  ON DELETE CASCADE
+);
+  

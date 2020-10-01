@@ -1,0 +1,86 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+h1, h2{
+  font-family: "Montserrat";
+  text-align: center;
+  color: pink;
+}
+
+h4 {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.nav-header-main {
+  height: 80%;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.nav-header-main ul {
+  height: 100%;
+}
+
+.nav-header-main ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+
+.nav-header-main ul li a {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 6px;
+  line-height: 48px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background: pink;
+  color: white;
+  border: 1px solid pink;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: pink;
+}
+
+table{
+  width: 400px;
+  margin: 80px auto;
+  font-family: "Montserrat";
+  background: pink;
+  border-color: #FFF;
+  border-style: solid;
+  border-spacing: 0 10px 0 0;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  color: #FFF;
+  text-align: left;
+}

@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Bamboo Cutlery Set",
+        "price": 14.99,
+        "image": { "fields": { "file": { "url": "./bamboo.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "All Natural Soap",
+        "price": 6.99,
+        "image": { "fields": { "file": { "url": "./soap.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Boxed Water - Pack of 6",
+        "price": 9.99,
+        "image": { "fields": { "file": { "url": "./boxed-Water.jpg" } } }
+      }
+    },
+     {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Reusable Coffee Pods",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./coffee.jpg" } } }
+      }
+    }
+  ]
+}
